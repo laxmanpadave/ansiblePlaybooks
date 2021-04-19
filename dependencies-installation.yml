@@ -1,6 +1,7 @@
 ---
 - hosts: appservers
   become: yes
+  become_user: root
   tasks:
   - name: Install git
     apt:
